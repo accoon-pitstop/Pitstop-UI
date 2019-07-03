@@ -14,11 +14,7 @@ before_script:
   - chmod -R a+x scripts
 
 script:
-  - npm install
-  - cd node_modules
-  - ls
-  - cd ..
-  - ng build --prod
+  - ./scripts/ng-build.sh
 
 after_success:
   - ./scripts/docker-publish.sh

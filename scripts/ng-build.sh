@@ -1,2 +1,2 @@
 npm install
-ng build --prod --aot
+ng build --prod

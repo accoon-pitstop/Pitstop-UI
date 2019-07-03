@@ -9,8 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'customers',
-    loadChildren:  () => import('./modules/customer-management/customer-management.module').then(mod => mod.CustomerManagementModule)
-
+    loadChildren: './modules/customer-management/customer-management.module#CustomerManagementModule',
   },
  
 

@@ -25,6 +25,8 @@ before_install:
 
 before_script:
   - npm install
+
+script:
   - ./scripts/ng-build.sh
 
 after_success:

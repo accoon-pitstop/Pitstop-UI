@@ -11,6 +11,7 @@ branches:
 before_script:
   - ls
   - npm install -g @angular/cli
+  - chmod -R a+x scripts
 
 script:
   - npm install

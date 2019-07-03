@@ -1,1 +1,1 @@
-ng build --prod
+npm run build

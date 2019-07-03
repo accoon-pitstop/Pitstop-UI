@@ -7,12 +7,16 @@ node_js:
 branches:
   only:
     - master
-    
+
 before_script:
   - ls
-  - npm install
+  - npm install -g @angular/cli
 
 script:
+  - npm install
+  - cd node_module
+  - ls
+  - cd ..
   - ./scripts/ng-build.sh
 
 after_success:
